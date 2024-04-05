@@ -1,0 +1,58 @@
+## Step 4: Write a Report on the Neural Network Model
+
+1. Overview of the analysis: Explain the purpose of this analysis.
+    The purpoose of this analysis is to provide for the nonprofit foundation Alphabet Soup help to select the applicants for funding with best
+chance of success in their ventures, using machine learning and neural networks.
+
+2. Results: Using bulleted lists and images to support your answers, address the following questions:
+
+    Data Preprocessing
+
+    - What variable(s) are the target(s) for your model?
+    The target is the "y" which is equal to "IS_SUCCESSFUL" column.
+
+    - What variable(s) are the features for your model?
+    The features is the "X" which is equal the all columns of the data frame droping only the columns "IS_SUCCESSFUL", "EIN", "NAME".
+
+    - What variable(s) should be removed from the input data because they are neither targets nor features?
+    Need to remove the columns "EIN", "NAME".
+
+    Compiling, Training, and Evaluating the Model
+
+    - How many neurons, layers, and activation functions did you select for your neural network model, and why?
+    I had 3 tries to get to best & highest accuracy
+
+    * 1st try:
+    I had 3 hidden layers and one outer layer layer.
+    layer 1= 80 neurons
+    layer 2= 30 neurons
+    layer 3= 15 neurons
+    Outer layer= 1 unit.
+
+    * 2nd try:
+    I had 4 hidden layers and one outer layer layer.
+    layer 1= 80 neurons
+    layer 2= 50 neurons
+    layer 3= 30 neurons
+    layer 4= 15 neurons
+    Outer layer= 1 unit.
+
+    *3rd try:
+    I had 4 hidden layers and one outer layer layer.
+    layer 1= 80 neurons
+    layer 2= 40 neurons
+    layer 3= 20 neurons
+    layer 4= 10 neurons
+    Outer layer= 1 unit.
+
+    - Were you able to achieve the target model performance?
+    The best accuracy value is Accuracy: 0.7264139652252197
+
+    - What steps did you take in your attempts to increase model performance?
+    The steps after cleanining and removing none features neither targets, and splitting used the deep neural net and trying different number of 
+    layers, activations, optimizers & epochs.
+
+3. Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this 
+classification problem, and then explain your recommendation.
+    Unfortunatly, the tries not get so different from another, maybe with more time and more hidden layers and switch the number of neurons I would
+get higher number od accuracy and small number of loss.
